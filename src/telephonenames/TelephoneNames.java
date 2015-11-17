@@ -94,6 +94,7 @@ public class TelephoneNames {
         */
         int [] startword = {0,0,0,0,0,0,0};
         
+        phoneOutput.format("Phonenumber: %s\n\n",phoneNumber);
         generateAllPhoneWords(number,startword, 0);
         phoneOutput.close();
     }
