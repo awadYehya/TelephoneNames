@@ -48,7 +48,7 @@ public class TelephoneNames {
         Scanner input = new Scanner(System.in);
         try {
             System.out.print("\nEnter a phonenumber (only digits above 1): ");
-            phoneNumber = input.next("\\d{7}");
+            phoneNumber = input.next("\\d{7}"); // pattern check
         } catch (NoSuchElementException e) {
             invalidInputDetected();
             return;
@@ -85,7 +85,15 @@ public class TelephoneNames {
         telchars[6] = 'T';
         telchars[7] = 'W';
         
+        /** This is an int array that has values ranging from 0-2
+        * If for example the first number is 2 corresponding to letters A,B,C
+        * Then 
+        * startword[0] = 0 corresponds to A
+        * startword[0] = 1 corresponds to B
+        * startword[0] = 2 corresponds to C
+        */
         int [] startword = {0,0,0,0,0,0,0};
+        
         generateAllPhoneWords(number,startword, 0);
         phoneOutput.close();
     }
