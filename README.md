@@ -6,7 +6,7 @@ Generates all possible telephone names.
 NUM - BERS  
 686 - 2377
 
-3^7 different combinations (here q and z are excluded)
+3^7 different combinations (here q and z are excluded)  
 WIll generate 2187 different possible names
 
 ```
